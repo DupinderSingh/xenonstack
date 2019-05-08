@@ -1,0 +1,36 @@
+GET https://career-admin.xenon.team/api/drive-portal/v1/user/drives/:drive_id/:testid
+    Header:-
+        Authorization: Bearer <<token>>
+
+UrlBody :-
+    drive_id -> id of drive
+testid -> id of test
+
+
+
+
+
+/*example*/
+
+{
+    "drive_name": "test drive",
+    "duration": 36000,
+    "email": "dupinder@xenondigilabs.com",
+    "expire": "2019-04-15T19:18:11Z",
+    "pools": [
+        {
+            "poolName": "UI/UX",
+            "poolId": "ui-ux",
+            "noOfQuestions": 4
+        },
+        {
+            "poolName": "ML",
+            "poolId": "ml",
+            "noOfQuestions": 4
+        }
+    ],
+    "questions": 8,
+    "start": "2019-04-15T09:18:11Z",
+    "test_name": "System care",
+    "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJjbGFpbSI6eyJkcml2ZSI6IjQzOTcyNzU2NjA5NjAzOTkzNyIsImRyaXZlX25hbWUiOiJ0ZXN0IGRyaXZlIiwiZW1haWwiOiJkdXBpbmRlckB4ZW5vbmRpZ2lsYWJzLmNvbSIsIm5hbWUiOiJEdXBpIFNpbmdoIiwicXVlc3Rpb25zIjo4LCJ0ZXN0Ijoic3lzdGVtLWNhcmUiLCJ0ZXN0X25hbWUiOiJTeXN0ZW0gY2FyZSJ9LCJleHAiOjE1NTUzNTU4OTF9.KYppv2Gtvn5v9EnOXlx2NTmyitzYMTlI1yK-4eivQuerHHszZZGj_VwCqqo4hZkWcoC9DvgcH5kmCHkBHxLiyw"
+}

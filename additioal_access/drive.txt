@@ -1,0 +1,105 @@
+--------------------------------------------------------- ( creating drive) ------------------------------------------------------------------------
+37. Create Drive
+
+    POST /v1/drive
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+type                string  required
+name                string  required
+start               string  required
+end                 string  required
+test_id         string  required
+college_id  string
+
+38. List Drives
+
+GET /v1/drive
+Header:-
+Authorization: Bearer <<admin_token>>
+
+39. Drive Details
+
+GET /v1/drive/:drive_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+
+40. Edit Drive
+
+PUT /v1/drive/:drive_id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+drive_id -> id of drive
+
+Body:-
+type                string  required
+name                string  required
+start               string  required
+end                 string  required
+test_id         string  required
+college_id  string
+
+41. Delete Drive
+
+DELETE /v1/drive/:drive_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+
+
+................................................................. (assigning drive to user) --------------------------------------------------
+
+
+42. Add user in Drive
+
+POST /v1/drive/:drive_id/user
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+Body:-
+email string required
+
+43. List users in a drive
+
+GET /v1/drive/:drive_id/user
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+
+44. Delete User from drive
+
+DELETE /v1/drive/:drive_id/user/:email
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+email -> emailId of user
+
+45. Add users in  a drive through csv
+
+POST /v1/drive/:drive_id/csv_user
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+drive_id -> id of drive
+Body:-
+users file required
+
+Note:- only csv file supported please convert excel sheet to csv then upload.

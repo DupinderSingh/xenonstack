@@ -1,0 +1,47 @@
+v1/signup
+body:-
+{
+      "email":"",
+      "password":"",
+      "contact":"",
+      "name":"",
+}
+
+v1/register
+body:-
+{
+"country":"India",
+"state":"Punjab",
+"city":"Zirakpur",
+"postal":"140603",
+"appliedAs":"Intern",
+"Interests":["C","C++","GoLang"],
+"experience":[{
+"name":"Idemia",
+"position":"Software Developer",
+"start":2018,
+"current":true
+}],
+"education":[{
+"school":"Chitkara University",
+"degree":"B.E.",
+"major":"CSE",
+"start":2014,
+"end":2018,
+"current":false
+}]
+}
+
+header:-
+Authorization: Bearer <token>
+
+v1/resume
+
+header:-
+Authorization: Bearer <token>
+body:-
+form-data
+key: "resume"
+type: "file"
+value: <file>
+

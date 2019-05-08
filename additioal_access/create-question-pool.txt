@@ -1,0 +1,139 @@
+## 2. List Questions in pool ##
+
+```
+GET /v1/question/:pool
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+pool -> pool_id
+```
+
+## 3. View Question Details ##
+
+```
+GET /v1/question/:pool/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+pool -> pool_id
+id -> question_id
+```
+
+## 4. Edit Question ##
+
+```
+PUT /v1/question/:pool/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+pool -> pool_id
+id -> question_id
+
+Body:-
+{
+	"title": "string, required",
+	"type": "string, required",
+	"options": [{
+		"value":"string, required",
+		"type":"string, required",
+		"is_correct":boolean, required,
+		"images":[{
+			"url":"string, required"
+		}]
+	}],
+	"images":[{
+		"url":"string, required"
+	}]
+}
+
+Note:- type value can only be "images" or "string"
+```
+
+## 5. Delete Question ##
+
+```
+DELETE /v1/question/:pool/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+pool -> pool_id
+id -> question_id
+```
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 1. Create Question in pool ##
+
+```
+POST /v1/question/:pool
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+pool -> pool_id
+
+Body:-
+{
+	"title": "string, required",
+	"type": "string, required",
+	"options": [{
+		"value":"string, required",
+		"type":"string, required",
+		"is_correct":boolean, required,
+		"images":[{
+			"url":"string, required"
+		}]
+	}],
+	"images":[{
+		"url":"string, required"
+	}]
+}
+
+Note:- type value can only be "images" or "string"
+```
+
+
+## 6. Upload Image ##
+
+```
+POST /v1/upload_image
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<admin_token>>
+
+Body:-
+image file required
+```
+
+## 7. deleting image ##
+
+```
+DELETE /api/drive-portal/v1/delete_image
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+url string required
+
+```
+
+```
+------------------ upload csv to add questions to pool -------------------------
+
+POST /v1/csv_question/:pool
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+pool -> pool_id
+Body:-
+question file required
+
+Note:- only csv file supported please convert excel sheet to csv then upload.
+```

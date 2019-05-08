@@ -1,0 +1,132 @@
+export const allJobs = [
+    {
+        team: "AI and Cognitive Solutions",
+        subTeams: [
+            "Data Visualisation",
+            "Business Intelligence",
+            "Computer Vision and Machine Learning",
+            "Deep learning",
+            "NLP and Text Analytics",
+            "DataOps"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Software and Services",
+        subTeams: [
+            "cloud infrastructure",
+            "Devops and SRE",
+            "Cloud Security",
+            "Data engineering",
+            "DataWarehousing"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Digital Transformation and IoT",
+        subTeams: [
+            "IoT Platform Developers",
+            "Real Time And Stream Processing",
+            "Data Science and AI"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Product Design and Platform Development",
+        subTeams: [
+            "Human Interface Design",
+            "Communications Design",
+            "Enterprise Platform Architect",
+            "Solution Architect"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Managed Services",
+        subTeams: [
+            "DevOps and Application Managed Services",
+            "Big Data Managed Services",
+            "ML/DL Managed Services",
+            "Security Managed Services"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Sales and Marketing",
+        subTeams: [
+            "Business Development",
+            "Sales Professionals",
+            "Marketing Professionals",
+            "Social Media Marketing"],
+        education: "<span>UG - BSc/BA/B.Tech or marketing or relevant field</span>",
+        description: "<p> <p>We are looking for an experienced Digital Marketing Executive to assist in the planning, execution, and optimization of our online marketing efforts.</p><p>The promotion of products and services through digital channels is a complex procedure with great potential which becomes increasingly useful for companies such as ours.\n</p><p>The ideal candidate will have a passion for all things marketing and technology. You will be well-versed in the concepts surrounding digital marketing and how the Internet can become a strong asset to securing growing revenue. You will be tech-savvy and intuitive with great ideas to reinforce our marketing campaign.</p> </p>",
+        summary: "<p> <p>We are looking for an experienced Digital Marketing Executive to assist in the planning, execution, and optimization of our online marketing efforts.</p><p>The promotion of products and services through digital channels is a complex procedure with great potential which becomes increasingly useful for companies such as ours.\n</p><p>The ideal candidate will have a passion for all things marketing and technology. You will be well-versed in the concepts surrounding digital marketing and how the Internet can become a strong asset to securing growing revenue. You will be tech-savvy and intuitive with great ideas to reinforce our marketing campaign.</p> </p>",
+        requirements: "<p>c, cpp, java, .net</p>",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    },
+    {
+        team: "Corporate funcs",
+        subTeams: [
+            -"HR Business partner",
+            -"Talent Aquisition",
+            -"Learning and Training Development",
+            -"Finance",
+            -"Legal"],
+        education: "",
+        description: "",
+        summary: "",
+        requirements: "",
+        responsibilities: "",
+        skills: "",
+        func: "",
+        experience: "",
+        qualifications: "",
+        location: ""
+    }
+]
+

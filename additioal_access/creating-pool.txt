@@ -1,0 +1,53 @@
+## 1. Healthz ##
+
+```
+Get /healthz
+```
+
+## 2. Create Pool ##
+
+```
+POST /v1/pool
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name    string    required
+```
+
+## 3. List pools ##
+
+```
+GET /v1/pool
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 4. Pool Details ##
+
+```
+GET /v1/pool/:pool_id
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 5. Edit Pool ##
+
+```
+PUT /v1/pool/:pool_id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name    string    required
+```
+
+## 6. Delete Pool ##
+
+```
+DELETE /v1/pool/:pool_id
+Header:-
+Authorization: Bearer <<admin_token>>
+```

@@ -1,0 +1,17 @@
+GET /v1/apply
+Header:-
+Authorization: Bearer <<token>>
+
+```
+
+
+
+2. Fetch job history admin side
+
+```
+GET /v1/users/:email/jobs
+Header:-
+Authorization: Bearer <<token>>
+
+Params:-
+email -> email of user

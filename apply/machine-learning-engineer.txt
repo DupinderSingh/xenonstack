@@ -1,0 +1,24 @@
+Machine Learning Engineer
+Education
+UG - B.Tech/B.E. - Any Specialization PG - MCA - Computers, M.Tech - Any Specialization, MS/M.Sc(Science) - Any Specialization
+
+MS in related field with 1+ years building machine learning models in industry
+
+Job Description
+Our team building the AI platform  that enables teams to develop machine-learning solutions that power amazingly intelligent user experiences. You will design and implement new machine learning algorithms and techniques and collaborate on large sets of data in collaboration with Data scientists and Software Engineering teams
+
+Participate in Product Development in artificial intelligence and machine learning applications.
+Develop solutions for real world, large-scale problems.
+Performance tuning of Machine Learning Algorithms on Large Dataset.
+
+Key Qualifications
+Deep technical skills in machine learning, deep learning, computer vision, natural language processing, or artificial intelligence
+ A passion for making these methods robust and scalable
+Strong software development skills, with proficiency in Python and C++ preferred
+Ability to explain and present analyses and machine learning concepts to a broad technical audience
+Exposure to Machine Learning algorithms, Tensor Flow, Keras etc is preferred.
+Experience to shell scripting in Linux/ UNIX environment.
+Creative, collaborative, and product focused
+Location
+Chandigarh
+

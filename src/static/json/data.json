@@ -1,0 +1,122 @@
+{
+    "lanes": [
+      {
+        "id": "r1",
+        "title": "Technical Interview",
+        "label":"this is label",
+        "style": {"width": 280},
+        "comment":"1",
+        "cards": [
+          {
+            "id": "c1",
+            "title": "Candidate 1",
+            "comment":"1",
+            "date":"17-1-19",
+            "tags": [
+              {"title":"17-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          },
+          
+          {
+            "id": "c2",
+            "title": "Candidate 2",
+            "date":"15-1-19",
+            "comment":"1",
+            "tags": [
+              {"title":"17-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ] 
+            
+             
+          },
+          {
+            "id": "c3",
+            "title": "Candidate 3",
+            "date":"17-1-19",
+            "comment":"10",
+            "tags": [
+              {"title":"16-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ] 
+            
+            
+          },
+          {
+            "id": "c4",
+            "title": "Candidate 4",
+            "date":"15-1-19",
+            "comment":"7",
+            "tags": [
+              {"title":"27-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          },
+          {
+            "id": "c5",
+            "title": "Candidate 5",
+            "date":"13-6-18",
+            "comment":"5",
+            "tags": [
+              {"title":"11-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          },
+          {
+            "id": "c6",
+            "title": "Candidate 6",
+            "date":"16-11-19",
+            "comment":"0",
+            "tags": [
+              {"title":"19-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          }
+        ]
+      },
+      {
+        "id": "r3",
+        "title": "Written Test",
+         
+        "style": {"width": 280},
+        "cards":[
+          {
+            "id": "c7",
+            "title": "Candidate 7",
+            "date":"3-6-18",
+            "comment":"2",
+             "tags": [
+              {"title":"17-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          },
+          {
+            "id": "c8",
+            "title": "Candidate 7",
+            "date":"3-6-18",
+            "comment":"3",
+            "tags": [
+              {"title":"17-1-19"," color":"white", "bgcolor": "#4d4d4d","text-align":"left"}
+                           
+              ]
+          }
+        ]
+        
+      },
+      {
+        "id": "r2",
+        "title": "HR",
+         
+        "style": {"width": 280},
+        "cards":[
+          {
+            "id":"c9",
+            "title":"Candidate 9",
+            "date":"5-2-19"
+          }
+        ]
+
+      }
+    ]
+  }
+  

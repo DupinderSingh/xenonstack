@@ -1,0 +1,663 @@
+/* Footer */
+footer.custom-footer {
+    background-color: #e7e9ec;
+}
+
+footer.custom-footer p {
+    color: #333;
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 0;
+    line-height: 40px;
+}
+
+/* footer end */
+
+/* Header */
+.custom-header .nav.top-nav > li {
+    margin: 0 5px;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top .nav.top-nav > li > a .top-nav-icon-badge {
+    background: #EF4432;
+}
+
+.custom-header .nav-header .logo-wrap {
+    height: 100% !important;
+}
+
+.custom-header .nav-header .logo-wrap a {
+    line-height: 60px;
+}
+
+.custom-header .nav-header .logo-wrap .brand-img {
+    max-width: 100%;
+    width: 35px;
+}
+
+.custom-header .nav.top-nav > li.alert-drp .dropdown-menu.alert-dropdown .sl-item .sl-content {
+    margin-left: 0 !important;
+}
+
+/*  Header end*/
+.fix-height {
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+/*.index-btn{*/
+/*  position: absolute;*/
+    /*bottom: 35px;*/
+    /*right: 30px;*/
+/*}*/
+
+/*  Sidebar */
+.fixed-sidebar-left .side-nav {
+    width: auto;
+}
+
+.custom-sidebar-left.fixed-sidebar-left {
+    border: 0 !important;
+}
+
+.custom-sidebar-left.fixed-sidebar-left .side-nav li.navigation-header > span {
+    color: #fff !important;
+}
+
+.custom-sidebar-left.fixed-sidebar-left .side-nav > li > a {
+    padding: 15px !important;
+    font-size: 16px;
+}
+
+.fixed-sidebar-left .side-nav li a .pull-right i {
+    color: #fff !important;
+}
+
+.fixed-sidebar-left .side-nav > li > ul {
+    background-color: rgb(0, 67, 125);
+
+}
+
+.fixed-sidebar-left .side-nav > li > ul > li a {
+    color: #fff !important;
+}
+
+.custom-sidebar-left.fixed-sidebar-left .side-nav li a i {
+    width: 25px !important;
+}
+
+/* Sidebar end */
+
+/*  Content start */
+
+.control-label {
+    color: #212121;
+    text-transform: capitalize;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 17px;
+}
+
+label {
+    min-height: 26px;
+}
+
+.radio label {
+    display: block;
+}
+
+.page-wrapper {
+    padding: 70px 0px;
+    min-height: calc(100vh - 50px);
+}
+
+.custom-content .heading-bg {
+    margin: 0 0 15px 0 !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.custom-content .heading-bg h4 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.custom-content .heading-bg h4 a:hover {
+    color: #0562e8;
+}
+
+.custom-content .heading-bg h4 a {
+    color: #2A3E4C;
+}
+
+.custom-panel.card-view.panel.panel-default > .panel-heading {
+    background: #0562e8 !important;
+}
+
+.custom-panel.card-view.panel > .panel-heading > .panel-title {
+    color: #fff;
+    font-size: 17px;
+}
+
+.custom-panel.card-view {
+    margin: 0;
+    /*padding: 15px;*/
+}
+
+/*  Content end */
+.feedback-section {
+    position: relative;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, .03);
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.feedback-section:hover {
+    border: 1px solid #0562e8;
+    transition: .5s all;
+}
+
+.feedback-section:hover .feedback-dlt {
+    visibility: visible;
+    color: #0562e8;
+    transition: .5s all;
+}
+
+.heading-div {
+    /*display: flex;*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.heading-div .head {
+    font-size: 19px;
+    margin: 0;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.date-text {
+    color: #757575;
+    font-size: 13px;
+}
+
+.heading-div span {
+    color: #aaa;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.feedback-detail {
+    margin-top: 1.5rem;
+}
+
+.feedback-dlt {
+    color: #0562e8;
+    visibility: hidden;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+/* Feedback end */
+
+/* Pool css start */
+.panel.custom-panel.pool-panel {
+    margin-bottom: 2rem;
+}
+
+.panel.custom-panel.pool-panel .panel-heading {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.view-pool {
+    float: right;
+    color: #0562e8;
+}
+
+.view-pool:hover {
+    color: #014ab3;
+}
+
+.pool-form-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    min-height: 710px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12)
+}
+
+.form-heading h4, h4.content-heading {
+    color: #0562e8;
+    margin-bottom: 1rem;
+    font-size: 21px;
+}
+
+.pool-form-wrapper .dropzone-panel .panel-body {
+    padding: 0px;
+}
+
+/* Pool css end */
+
+/* create test css start */
+.add-div {
+    position: relative;
+    width: 100%;
+    top: 31px;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    background: #0562e8;
+    color: #fff;
+}
+
+.test-panel-body li {
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.test-panel-body li span {
+    color: #333;
+    margin-left: 10px;
+}
+
+.bottom-body {
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+    .add-div {
+        top: 0;
+    }
+}
+
+/* create test css end */
+
+/* Candidate listing */
+.custom-action {
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+/* Candidate listing end */
+
+/* Candidate detail */
+
+.divider {
+    background-color: #eee;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.profile-sec-head {
+    font-size: 21px;
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border: 1px solid #eee;
+}
+
+.candidate-img-div {
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.candidate-img-div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.resume-link, .resume-link:hover {
+    color: #0562e8;
+}
+
+/* Candidate detail end */
+
+/*********  add question page  ***********/
+.question-upload-text {
+    font-size: 15px;
+    text-decoration: underline;
+    color: #003a8d;
+    text-align: right;
+    cursor: pointer;
+}
+
+.csv-upload-container {
+    cursor: pointer;
+    padding: 20px 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.csv-upload-input {
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.csv-upload-box {
+    position: absolute;
+    left: 40%;
+    top: 18%;
+    cursor: pointer;
+}
+
+.csv-upload-box i {
+    font-size: 40px;
+    color: #ddd;
+}
+
+.csv-upload-box span {
+    position: absolute;
+    cursor: pointer;
+    top: 28%;
+    color: #aaa;
+    width: 200px;
+    font-size: 17px;
+}
+
+.custom-image-uploader {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.custom-img-box {
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative;
+    border: 1px dashed #ddd;
+}
+
+.custom-img-box input[type="file"] {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.custom-img-box i {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.custom-img-box span {
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.custom-img-preview {
+    padding-top: 2rem;
+}
+
+.img-preview-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.prev-img-box {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-right: 2rem;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.prev-img-box .image-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.prev-img-box:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-dlt-details {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    cursor: pointer;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.prev-img-box:hover .image-dlt-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+#writeQuestion .cstm-checkbox {
+    top: 0;
+}
+
+/*********  add question page end ***********/
+
+/***********  Main dashboard page css *********/
+
+.info-box {
+    display: block;
+    min-height: 90px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    margin-bottom: 3rem;
+}
+
+.info-box-icon {
+    display: block;
+    float: left;
+    height: 90px;
+    color: #fff;
+    width: 90px;
+    background-color: #757575;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+}
+
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+
+.info-box-text {
+    text-transform: uppercase;
+}
+
+.progress-description, .info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-box-number {
+    display: block;
+    font-size: 39px;
+}
+
+#dash-feedback-table {
+    table-layout: fixed;
+}
+
+.dash-feedback-panel table tbody tr td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-dashboard.feedback-section, .main-dashboard.feedback-section:hover {
+    padding: 10px 10px 0;
+    box-shadow: none;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.main-dashboard.feedback-section .feedback-detail {
+    margin-top: 0rem;
+}
+
+.main-dashboard.feedback-section .heading-div {
+    display: flex;
+}
+
+/***********  Main dashboard page css end  *********/
+
+/*********  create drive page css  *******/
+#selectCollege {
+    display: none;
+}
+
+/*********  create drive page css end  *******/
+
+/* custom radio button */
+/* The container */
+.cstm-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.cstm-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.cstm-radio .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.cstm-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.cstm-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.cstm-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.cstm-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.cstm-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* end */
+
+
+/*media queries*/

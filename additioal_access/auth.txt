@@ -1,0 +1,526 @@
+ to view user profile at admin side
+GET /v1/users/:email
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody
+email -> email of user
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 1. Healthz ##
+
+```
+Get /healthz
+```
+
+## 2. Login ##
+
+```
+POST /v1/login
+Content-Type: application/json
+
+Body:-
+username    string    required
+password    string    required
+```
+
+## 3. Check email use for sending otp ##
+
+```
+POST /v1/check_email
+Content-Type: application/json
+
+Body:-
+email    string    required
+```
+
+## 4. Signup for getting token to register and upload resume and login to dashboard ##
+
+```
+POST /v1/signup
+Content-Type: application/json
+
+Body:-
+name                string    required
+email               string    required
+password            string    required
+```
+
+## 5. Forgot Password ##
+
+```
+POST /v1/forgotpass
+Content-Type: application/json
+```
+<table><tr><th> Variable name </th><th> type </th><th> Required </th></tr>
+<tr><td> state </td><td> string </td><td> Yes <br> (value should be either 'forgot' or 'reset') <br> In case of forgot send 'email' and <br> in case of reset send other two params.</td></tr>
+<tr><td> email </td><td> string </td><td> optional for reset state </td></tr>
+<tr><td> token </td><td> string </td><td> optional for forgot state </td></tr>
+<tr><td> workspace </td><td> string </td><td> optional for reset state </td></tr>
+<tr><td> password </td><td> string </td><td>optional for forgot state <br> It contains new password. </td></tr>
+</table>
+
+## 6. Verify Email ##
+
+```
+POST /v1/verifymail
+Content-Type: application/json
+
+Body:-
+verification_code   string required
+email               string required
+```
+
+## 7. Send verification code again ##
+
+```
+POST /v1/send_code_again
+Content-Type: application/json
+
+Body:-
+email string required
+```
+
+## 8. Refresh jwt token ##
+
+```
+GET /v1/refresh_token
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 9. Logout to delete active session ##
+
+```
+GET /v1/logout
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 10. Sync career portal user##
+
+```
+GET /v1/career_sync
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 11. Sync hiring portal user ##
+
+```
+GET /v1/hiring_sync
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 12. To get list of all users ##
+
+```
+GET /v1/users
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 13. To get list of all feedbacks ##
+
+```
+GET /v1/feedback
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 14. Change Password ##
+
+```
+PUT /v1/changepass
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+password string required
+```
+
+## 15. Submit feedback ##
+
+```
+PUT /v1/feedback
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+comment string required
+```
+
+## 16. View profile information ##
+
+```
+PUT /v1/profile
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 17. Register user add user detail ##
+
+```
+POST /v1/register
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+{
+	"name": "string, required",
+	"contact": "string, required",
+	"country": "string",
+	"state": "string",
+	"city": "string",
+	"postal": "string",
+	"whoYouAre": "string, required",
+	"linkedin": "string, required",
+	"github": "string",
+	"otherLink": "string",
+	"appliedAs": "string, required",
+	"appliedFor": "string, required",
+	"interests": ["string"],
+	"education": [{
+		"school":"string",
+		"degree":"string",
+		"major":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}],
+	"projects":[{
+		"name":"string",
+		"description":"description",
+		"skills":"skills"
+	}],
+	"experience":[{
+		"name":"string",
+		"position":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}]
+}
+```
+
+## 18. Update Profile ##
+
+```
+PUT /v1/profile
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+{
+	"name": "string, required",
+	"contact": "string, required",
+	"country": "string",
+	"state": "string",
+	"city": "string",
+	"postal": "string",
+	"whoYouAre": "string, required",
+	"linkedin": "string, required",
+	"github": "string",
+	"otherLink": "string",
+	"appliedAs": "string, required",
+	"appliedFor": "string, required",
+	"interests": ["string"],
+	"education": [{
+		"school":"string",
+		"degree":"string",
+		"major":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}],
+## 1. Healthz ##
+
+```
+Get /healthz
+```
+
+## 2. Login ##
+
+```
+POST /v1/login
+Content-Type: application/json
+
+Body:-
+username    string    required
+password    string    required
+```
+
+## 3. Check email use for sending otp ##
+
+```
+POST /v1/check_email
+Content-Type: application/json
+
+Body:-
+email    string    required
+```
+
+## 4. Signup for getting token to register and upload resume and login to dashboard ##
+
+```
+POST /v1/signup
+Content-Type: application/json
+
+Body:-
+name                string    required
+email               string    required
+password            string    required
+```
+
+## 5. Forgot Password ##
+
+```
+POST /v1/forgotpass
+Content-Type: application/json
+```
+<table><tr><th> Variable name </th><th> type </th><th> Required </th></tr>
+<tr><td> state </td><td> string </td><td> Yes <br> (value should be either 'forgot' or 'reset') <br> In case of forgot send 'email' and <br> in case of reset send other two params.</td></tr>
+<tr><td> email </td><td> string </td><td> optional for reset state </td></tr>
+<tr><td> token </td><td> string </td><td> optional for forgot state </td></tr>
+<tr><td> workspace </td><td> string </td><td> optional for reset state </td></tr>
+<tr><td> password </td><td> string </td><td>optional for forgot state <br> It contains new password. </td></tr>
+</table>
+
+## 6. Verify Email ##
+
+```
+POST /v1/verifymail
+Content-Type: application/json
+
+Body:-
+verification_code   string required
+email               string required
+```
+
+## 7. Send verification code again ##
+
+```
+POST /v1/send_code_again
+Content-Type: application/json
+
+Body:-
+email string required
+```
+
+## 8. Refresh jwt token ##
+
+```
+GET /v1/refresh_token
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 9. Logout to delete active session ##
+
+```
+GET /v1/logout
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 10. Sync career portal user##
+
+```
+GET /v1/career_sync
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 11. Sync hiring portal user ##
+
+```
+GET /v1/hiring_sync
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 12. To get list of all users ##
+
+```
+GET /v1/users
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 13. To get list of all feedbacks ##
+
+```
+GET /v1/feedback
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 14. Change Password ##
+
+```
+PUT /v1/changepass
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+password string required
+```
+
+## 15. Submit feedback ##
+
+```
+PUT /v1/feedback
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+comment string required
+```
+
+## 16. View profile information ##
+
+```
+PUT /v1/profile
+Header:-
+Authorization: Bearer <<token>>
+```
+
+## 17. Register user add user detail ##
+
+```
+POST /v1/register
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+{
+	"name": "string, required",
+	"contact": "string, required",
+	"country": "string",
+	"state": "string",
+	"city": "string",
+	"postal": "string",
+	"whoYouAre": "string, required",
+	"linkedin": "string, required",
+	"github": "string",
+	"otherLink": "string",
+	"appliedAs": "string, required",
+	"appliedFor": "string, required",
+	"interests": ["string"],
+	"education": [{
+		"school":"string",
+		"degree":"string",
+		"major":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}],
+	"projects":[{
+		"name":"string",
+		"description":"description",
+		"skills":"skills"
+	}],
+	"experience":[{
+		"name":"string",
+		"position":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}]
+}
+```
+
+## 18. Update Profile ##
+
+```
+PUT /v1/profile
+Header:-
+Content-Type: application/json
+Authorization: Bearer <<token>>
+
+Body:-
+{
+	"name": "string, required",
+	"contact": "string, required",
+	"country": "string",
+	"state": "string",
+	"city": "string",
+	"postal": "string",
+	"whoYouAre": "string, required",
+	"linkedin": "string, required",
+	"github": "string",
+	"otherLink": "string",
+	"appliedAs": "string, required",
+	"appliedFor": "string, required",
+	"interests": ["string"],
+	"education": [{
+		"school":"string",
+		"degree":"string",
+		"major":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}],
+	"projects":[{
+		"name":"string",
+		"description":"description",
+		"skills":"skills"
+	}],
+	"experience":[{
+		"name":"string",
+		"position":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}]
+}
+```
+
+## 19. Upload Resume ##
+
+```
+POST /v1/resume
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<token>>
+
+Body:-
+resume file required
+```
+	"projects":[{
+		"name":"string",
+		"description":"description",
+		"skills":"skills"
+	}],
+	"experience":[{
+		"name":"string",
+		"position":"string",
+		"start":"string",
+		"end":"string",
+		"current":bool
+	}]
+}
+```
+
+## 19. Upload Resume ##
+
+```
+POST /v1/resume
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<token>>
+
+Body:-
+resume file required
+```

@@ -1,0 +1,8 @@
+POST https://career-admin.xenon.team/api/auth/v1/apply
+Header:-
+Authorization: Bearer <<token>>
+Content-Type: application/json
+
+Body:-
+jobid 	string	required
+teamid 	string	required

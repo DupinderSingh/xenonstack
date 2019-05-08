@@ -1,0 +1,6 @@
+export const DRIVES_REQUEST = "DRIVES_REQUEST";
+export const DRIVES_SUCCESS = "DRIVES_SUCCESS";
+export const DRIVES_FAILURE = "DRIVES_FAILURE";
+
+export  const CLEAR_STATUS = "CLEAR_STATUS";
+export const CLEAR_ALL = "CLEAR_ALL";

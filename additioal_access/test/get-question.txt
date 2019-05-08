@@ -1,0 +1,150 @@
+syntax = "proto3";
+
+package careertest;
+
+//rpc services
+service TestModule {
+  rpc NewQuestion(New) returns(AssignedQuestion) {}
+  rpc SubmitAnswer(Answer) returns(EmptyReply) {}
+  rpc SubmitTest(EmptyRequest) returns(EmptyReply) {}
+}
+
+//requests and replies
+
+//request for NewQuestion or existing Question
+message New{
+  int64 index=1;
+}
+
+//request for submit answer
+message Answer{
+  string quesId=1;
+  string answerId=2;
+  int64 status=3;
+}
+
+//reply for NewQuestion service question details
+message AssignedQuestion{
+  Question question=1;
+  int64 marked=2;
+  Summary summary=3;
+  repeated Status status=4;
+}
+
+//question details
+message Question{
+  string id=1;
+  string title=2;
+  string type=3;
+  repeated Option options=4;
+  repeated Image images=5;
+}
+
+//option details
+message Option{
+  string id=1;
+  string value=2;
+  string type=3;
+  repeated Image images=4;
+}
+
+//image urls
+message Image{
+  string url=1;
+}
+
+//summary of test
+message Summary{
+  int64 all=1;
+  int64 marked=2;
+  int64 unanswered=3;
+  int64 answered=4;
+}
+
+//question status
+message Status{
+  int64 index=1;
+  int64 status=2;
+}
+
+//empty reply
+message EmptyReply{}
+//empty request
+message EmptyRequest{}
+
+/*------------- new proto asshole*/
+
+﻿syntax = "proto3";
+
+package careertest;
+
+//rpc services
+service TestModule {
+  rpc NewQuestion(New) returns(AssignedQuestion) {}
+  rpc SubmitAnswer(Answer) returns(EmptyReply) {}
+  rpc SubmitTest(EmptyRequest) returns(EmptyReply) {}
+}
+
+//requests and replies
+
+//request for NewQuestion or existing Question
+message New{
+  int64 index=1;
+  string pool=2;
+}
+
+//request for submit answer
+message Answer{
+  string quesId=1;
+  string answerId=2;
+  int64 status=3;
+}
+
+//reply for NewQuestion service question details
+message AssignedQuestion{
+  Question question=1;
+  string marked=2;
+  Summary summary=3;
+  repeated Status status=4;
+}
+
+//question details
+message Question{
+  string id=1;
+  string title=2;
+  string type=3;
+  repeated Option options=4;
+  repeated Image images=5;
+}
+
+//option details
+message Option{
+  string id=1;
+  string value=2;
+  string type=3;
+  repeated Image images=4;
+}
+
+//image urls
+message Image{
+  string url=1;
+}
+
+//summary of test
+message Summary{
+  int64 all=1;
+  int64 marked=2;
+  int64 unanswered=3;
+  int64 answered=4;
+}
+
+//question status
+message Status{
+  int64 index=1;
+  int64 status=2;
+}
+
+//empty reply
+message EmptyReply{}
+//empty request
+message EmptyRequest{}

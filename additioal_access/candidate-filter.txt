@@ -1,0 +1,20 @@
+To get list of all users
+GET https://career-admin.xenon.team/api/auth/v1/users
+Header:-
+Authorization: Bearer <<admin_token>>
+
+Query Params :-
+
+page 		int 		optional  (current page number)
+location 		string 	optional  (location selected during filters)
+qualification 	string 	optional  (qualification selected during filters)
+applied 		string 	optional  (applied job selected during filters)
+
+```
+
+
+```
+To get dropdown data for filters
+GET https://career-admin.xenon.team/api/auth/v1/filterdata
+Header:-
+Authorization: Bearer <<admin_token>>

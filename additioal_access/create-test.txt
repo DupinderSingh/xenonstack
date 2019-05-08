@@ -1,0 +1,78 @@
+
+## 1. Create Test ##
+
+```
+POST /v1/test
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+{
+	"name": "string, required",
+	"duration": "string, required",
+	"pools": [{
+		"poolId":"string, required",
+		"noOfQuestions":"integer, required",
+	}]
+}
+```
+
+## 2. List Tests ##
+
+```
+GET /v1/test
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 3. Test Details ##
+
+```
+GET /v1/test/:test_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+test -> test_id
+```
+
+## 4. Edit Test ##
+
+```
+PUT /v1/pool/:test_id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+test -> test_id
+
+Body:-
+{
+	"name": "string, required",
+	"duration": "string, required",
+	"pools": [{
+		"poolId":"string, required",
+		"noOfQuestions":"integer, required",
+	}]
+}
+```
+
+## 5. Delete Test ##
+
+```
+DELETE /v1/pool/:test_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+test -> test_id
+```
+
+
+date: 1552308816
+duration: 25
+id: "system-care"
+name: "System care"
+pools: ["Scala", "Java"]

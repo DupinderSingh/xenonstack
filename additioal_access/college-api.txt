@@ -1,0 +1,59 @@
+31. Create College
+
+POST /v1/college
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name            string    required
+location    string    required
+
+32. List pools
+
+GET /v1/college
+Header:-
+Authorization: Bearer <<admin_token>>
+
+33. Pool Details
+
+GET /v1/college/:college_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+34. Edit Pool
+
+PUT /v1/college/:college_id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name            string    required
+location    string    required
+
+35. Delete Pool
+
+DELETE /v1/college/:college_id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+36. Upload Colleges with CSV
+
+POST /v1/csv_college
+Content-Type: form-data
+Header:-
+Authorization: Bearer <<admin_token>>
+
+Body:-
+colleges file required
+
+Note:- only csv file supported please convert excel sheet to csv then upload.
+
+/*------------------------------------ websocket -----------------------------------*/
+
+ANY https://career-admin.xenon.team/api/drive-portal/v1/ws/college
+data -> string for seraching college name
+
+/*hiring portal host link...*/
+career-admin.xenon.team/rpc/test-portal

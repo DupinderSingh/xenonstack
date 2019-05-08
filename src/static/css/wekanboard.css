@@ -1,0 +1,51 @@
+.wekanBoardContainer {
+    background-color: #f3f3f3 !important;
+    min-height: 100vh !important;
+}
+.board-height .wekanBoardContainer.jrGeNN{
+
+    height:calc(100vh - 213px) !important;
+    min-height: calc(100vh - 213px) !important;
+}
+.board-height .sc-EHOje.cqkFMI{
+    height:auto;
+    overflow:auto;
+    overflow-x: visible !important;
+
+}
+.board-height .jrGeNN{
+    overflow-y:auto !important;
+    
+}
+.board-height .sc-EHOje.cqkFMI{
+    max-height:60vh !important;
+}
+.board-height section{
+    width:auto;
+}
+.board-height .cuFeqX{
+   margin-top: 5px;
+   justify-content: start !important;
+   border-top: none !important;
+
+}
+.board-height .eoGtce{
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+.board-height .comPlainTextContentEditable{
+    padding: 6px 12px !important;
+    background: white !important;
+    border-radius: 2px !important;
+    border : 2px solid #ccc important;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+}
+.board-height .sc-cvbbAY.cZqlgI{
+    background: #0562e8 !important;
+}
+.board-height .smooth-dnd-container {
+    
+    min-height: calc(100vh - 352px) !important;
+
+}

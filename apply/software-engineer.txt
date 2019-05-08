@@ -1,0 +1,27 @@
+Software Engineer
+Education
+UG - B.Tech/B.E. - Any Specialization PG - MCA - Computers, M.Tech - Any Specialization, MS/M.Sc(Science) - Any Specialization
+Description
+Design, develop, test, deploy, maintain and improve the software.
+Manage individual project priorities, deadlines and deliverables.
+Efficient Code and Documentation of the Project.
+Proper Github Process Flow Implementation and Coding Best Practices.
+Review and influence ongoing design, architecture, standards and methods for operating services and systems.
+Job Summary
+We are looking for a passionate Software Engineer to design, develop and implement Solution for Data Engineering and Product Development for DevOps, BigData and Data Science The successful candidate will be able to build high-quality, innovative and fully performing software in compliance with coding standards and technical design.
+Key Qualifications
+BS degree in Computer Science, a similar technical field of study or equivalent practical experience.
+Software development experience in one or more general purpose programming languages.
+Building Data Solutions for High Volume of Transaction Data.
+Strong Knowledge of Algorithms and Data structures.
+Experience with test-driven development.
+Strong knowledge of Databases - SQL/NoSQL Databases and Graph Databases.
+Working proficiency and communication skills in verbal and written English.
+Preferred Qualifications
+Experience with one or more general purpose programming languages including but not limited to: Java, C/C++, C#, Objective C, Python, JavaScript, or Go.
+Interest and ability to learn other coding languages as needed.
+Job Function
+Development And Designing
+Location
+Chandigarh
+

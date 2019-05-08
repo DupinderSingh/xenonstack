@@ -1,0 +1,23 @@
+1. To get list of all feedbacks
+GET /v1/feedback
+Header:-
+Authorization: Bearer <<admin_token>>
+
+Params:-
+value string required
+
+Note:- value can only be archived or unarchived
+
+
+2. To archive or unarchived any feedback
+
+Authorization: Bearer <<admin_token>>
+
+UrlBody:-
+PUT /v1/feedback/:id
+Header:-
+id -> feedback id
+Params:-
+value string required
+
+Note:- value can only be false or true

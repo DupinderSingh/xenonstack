@@ -1,0 +1,131 @@
+
+## 20. Create Job Team ##
+
+```
+POST /v1/teamjob
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name    		string    required
+description    	string    required
+```
+
+## 21. List job teams ##
+
+```
+GET /v1/teamjob
+Header:-
+Authorization: Bearer <<admin_token>>
+```
+
+## 22. Team Job Details ##
+
+```
+GET /v1/teamjob/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+
+UrlBody :-
+id -> team_id
+```
+
+## 23. Edit Job Team ##
+
+```
+PUT /v1/teamjob/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+id -> team_id
+Body:-
+name    string    required
+```
+
+## 24. Delete Job Team ##
+
+```
+DELETE /v1/teamjob/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+UrlBody :-
+id -> team_id
+```
+
+## 25. Create Job ##
+
+```
+POST /v1/job
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+Body:-
+name    	string		required
+summary 	string		required
+location 	string		required
+body 		string		required
+teamId 		string		required
+teamName 	string		required
+```
+// userrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr...............
+
+
+## 26. List Jobs ##
+
+```
+GET /v1/job
+```
+
+## 27. List Jobs by Teams ##
+
+```
+GET /v1/job/:team
+UrlBody :-
+team -> team_id
+```
+
+## 28. Job Details ##
+
+```
+GET /v1/job/:team/:id
+
+UrlBody :-
+team -> team_id
+id -> job_id
+```
+////////////////////////////////////////////////////////////////////////////////////////
+## 29. Edit Job ##
+
+```
+PUT /v1/job/:team/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+Content-Type: application/json
+
+UrlBody :-
+team -> team_id
+id -> job_id
+Body:-
+name    	string		required
+summary 	string		required
+location 	string		required
+body 		string		required
+teamId 		string		required
+teamName 	string		required
+```
+
+## 30. Delete Job ##
+
+```
+DELETE /v1/job/:team/:id
+Header:-
+Authorization: Bearer <<admin_token>>
+UrlBody :-
+team -> team_id
+id -> job_id
+```
+","Name":"Sales and Marketing","Description":"Explore Career opportunities in Sales and Marketing
